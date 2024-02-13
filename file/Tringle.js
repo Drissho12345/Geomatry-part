@@ -1,4 +1,4 @@
-function calculateTringleArea(){
+function triangleArea(){
     // console.log('inside function')
     const triangleBase = document.getElementById('triangle-base');
     const triangleBaseValue = triangleBase.value;
