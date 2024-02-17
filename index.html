@@ -21,13 +21,13 @@
               <figure><img class="pt-4" src="images/triangle.png" alt="triangle" /></figure>
               <div class="card-body">
                 <h2 class="card-title justify-center  text-center text-black">Triangle</h2>
-                <p class="text-center text-3xl text-black">Area = 0.5 X b X h</p>
-                <div>
-                  <input id="triangle-base" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Base"><span class="mr-2 ml-2 text-xl">cm</span>
-                  <input id="triangle-hidth" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Height"><span class="mr-2 ml-2 text-xl">cm</span>
+                <p class="text-center text-2xl text-black">Area = 0.5 X b X h</p>
+                <div class="justify-center text-center">
+                  <input id="triangle-base" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Base"><span class="mr-2 ml-2 text-lg">cm</span>
+                  <input id="triangle-hidth" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Height"><span class="mr-2 ml-2 text-lg">cm</span>
                 </div>
                 <div class="justify-center text-center">
-                  <p class="text-2xl">Area: <span id="triangle-area"></span>cm<sup>2</sup></p>
+                  <p class="text-2xl text-black">Area: <span id="triangle-area"></span>cm<sup>2</sup></p>
                 </div>
                 <div onclick="triangleArea()" class="card-actions">
                   <button class="btn btn-primary w-full text-xl">Calculate</button>
@@ -39,13 +39,13 @@
               <figure><img class="pt-4" src="images/rectangle.png" alt="Rectangle" /></figure>
               <div class="card-body">
                 <h2 class="card-title justify-center  text-center text-black">Rectangle</h2>
-                <p class="text-center text-3xl text-black">Area (A) = W X I</p>
-                <div>
-                  <input id="rectangle-lenth" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-xl">m</span>
-                  <input id="rectangle-weight" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Weight"><span class="mr-2 ml-2 text-xl ">m</span>
+                <p class="text-center text-2xl text-black">Area (A) = W X I</p>
+                <div class="justify-center text-center">
+                  <input id="rectangle-lenth" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-lg">cm</span>
+                  <input id="rectangle-weight" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Wight"><span class="mr-2 ml-2 text-lg ">cm</span>
                 </div>
                 <div class="justify-center text-center">
-                  <p class="text-2xl">Area: <span id="rectangle-area"></span>m<sup>2</sup></p>
+                  <p class="text-2xl text-black">Area: <span id="rectangle-area"></span>cm<sup>2</sup></p>
                 </div>
                 <div onclick="rectangleCalculation()" class="card-actions">
                   <button class="btn btn-primary w-full text-xl">Calculate</button>
@@ -54,18 +54,18 @@
             </div>
   <!-- card-3 -->
             <div class="card  card-compact p-2  bg-white  shadow-xl">  
-              <figure><img class="pt-4" src="images/parallelogram.png" alt="Rectangle" /></figure>
+              <figure><img class="pt-4" src="images/parallelogram.png" alt="parallelogram" /></figure>
               <div class="card-body">
                 <h2 class="card-title justify-center  text-center text-black">Parallelogram</h2>
-                <p class="text-center text-3xl text-black">Area (A) = W X I</p>
-                <div>
-                  <input id="rectangle-lenth" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-xl">m</span>
-                  <input id="rectangle-weight" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Weight"><span class="mr-2 ml-2 text-xl ">m</span>
+                <p class="text-center text-2xl text-black">Area (A) = b X h</p>
+                <div class="justify-center text-center">
+                  <input id="parallelogram-Base" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Base"><span class="mr-2 ml-2 text-lg">cm</span>
+                  <input id="parallelogram-height" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="height"><span class="mr-2 ml-2 text-lg ">cm</span>
                 </div>
                 <div class="justify-center text-center">
-                  <p class="text-2xl text-black">Area: <span id="rectangle-area"></span>m<sup>2</sup></p>
+                  <p class="text-2xl text-black">Area: <span id="parallelogram-area"></span>cm<sup>2</sup></p>
                 </div>
-                <div onclick="rectangleCalculation()" class="card-actions">
+                <div onclick="parallelogramCalculation()" class="card-actions">
                   <button class="btn btn-primary w-full text-xl">Calculate</button>
                 </div>
               </div>
@@ -73,16 +73,52 @@
             
   <!-- card-4 -->
             <div class="card  card-compact p-2  bg-white  shadow-xl">  
-              <figure><img class="pt-4" src="images/ellipse.png" alt="Rectangle" /></figure>
+              <figure><img class="pt-4" src="images/ellipse.png" alt="Ellipse" /></figure>
               <div class="card-body">
-                <h2 class="card-title justify-center  text-center text-black">Rectangle</h2>
-                <p class="text-center text-3xl text-black">Area (A) = W X I</p>
-                <div>
-                  <input id="rectangle-lenth" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-xl">m</span>
-                  <input id="rectangle-weight" class="w-24 bg-black text-xl p-2 rounded-sm" type="text" placeholder="Weight"><span class="mr-2 ml-2 text-xl ">m</span>
+                <h2 class="card-title justify-center  text-center text-black">Ellipse</h2>
+                <p class="text-center text-2xl text-black">Area (A) = PI X a X b</p>
+                <div class="justify-center text-center">
+                  <input id="ellipse-lenth" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="a axis"><span class="mr-2 ml-2 text-lg">cm</span>
+                  <input id="ellipse-weight" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="b axis"><span class="mr-2 ml-2 text-lg ">cm</span>
                 </div>
                 <div class="justify-center text-center">
-                  <p class="text-2xl">Area: <span id="rectangle-area"></span>m<sup>2</sup></p>
+                  <p class="text-2xl text-black">Area: <span id="ellipse-area"></span>cm<sup>2</sup></p>
+                </div>
+                <div onclick="ellipseCalculation()" class="card-actions">
+                  <button class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+  <!--card-5-->
+            <div class="card  card-compact p-2  bg-white  shadow-xl">  
+              <figure><img class="pt-4" src="images/rhombus.png" alt="Rhombus" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center  text-center text-black">Rhombus</h2>
+                <p class="text-center text-2xl text-black">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub> </p>
+                <div class="justify-center text-center">
+                  <input id="rhombus-lenth" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-lg">m</span>
+                  <input id="rhombus-weight" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Weight"><span class="mr-2 ml-2 text-lg ">m</span>
+                </div>
+                <div class="justify-center text-center">
+                  <p class="text-2xl text-black">Area: <span id="rectangle-area"></span>m<sup>2</sup></p>
+                </div>
+                <div onclick="rectangleCalculation()" class="card-actions">
+                  <button class="btn btn-primary w-full">Calculate</button>
+                </div>
+              </div>
+            </div>
+<!--card-6  -->
+            <div class="card  card-compact p-2  bg-white  shadow-xl">  
+              <figure><img class="pt-4" src="images/pentagon.png" alt="Rectangle" /></figure>
+              <div class="card-body">
+                <h2 class="card-title justify-center  text-center text-black">Rectangle</h2>
+                <p class="text-center text-2xl text-black">Area (A) = W X I</p>
+                <div class="justify-center text-center">
+                  <input id="rectangle-lenth" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Lenth"><span class="mr-2 ml-2 text-lg">m</span>
+                  <input id="rectangle-weight" class="w-24 bg-black text-lg p-2 rounded-sm" type="text" placeholder="Weight"><span class="mr-2 ml-2 text-lg ">m</span>
+                </div>
+                <div class="justify-center text-center">
+                  <p class="text-2xl text-black">Area: <span id="rectangle-area"></span>m<sup>2</sup></p>
                 </div>
                 <div onclick="rectangleCalculation()" class="card-actions">
                   <button class="btn btn-primary w-full">Calculate</button>
@@ -97,6 +133,8 @@
       </div>
         
     </main>
+    <script src="file/ellipse.js"></script>
+    <script src="file/parallelogram.js"></script>
     <script src="file/Rectangle.js"></script>
     <script src="file/Tringle.js"></script>
 
